@@ -108,5 +108,4 @@ submission = pd.merge(
     on=['shop_id','item_id'],
     how='left'
 )
-# 提出ファイル作成
 submission[['ID','item_cnt_month']].to_csv('submission.csv', index=False)
